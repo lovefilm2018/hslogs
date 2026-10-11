@@ -213,8 +213,21 @@ header {
     text-align: center;
     color: #ffffff;
     padding: 4rem 1.5rem;
+    overflow: hidden;
     background: linear-gradient(rgba(18, 48, 28, 0.75), rgba(18, 48, 28, 0.78)), 
                 url('images/logs1.webp') center/cover no-repeat;
+}
+
+#hero-video {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    transform: translate(-50%, -50%);
+    z-index: 0;
+    filter: brightness(0.7);
 }
 
 .hero-content {
