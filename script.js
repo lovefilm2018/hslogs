@@ -46,6 +46,9 @@ document.addEventListener('DOMContentLoaded', () => {
 
     // 6. Order Form Handling
     setupOrderForm();
+
+    // 7. Interactive PAA FAQ Accordion
+    setupFaqAccordion();
 });
 
 // Setup Lightbox for Gallery and Flyers
@@ -203,4 +206,35 @@ function setupOrderForm() {
             window.location.href = `mailto:haydenswan21@gmail.com?subject=${subject}&body=${encodeURIComponent(body)}`;
         });
     }
+}
+
+// 7. Setup Interactive PAA FAQ Accordion
+function setupFaqAccordion() {
+    const faqItems = document.querySelectorAll('.faq-item');
+    if (!faqItems.length) return;
+
+    faqItems.forEach(item => {
+        const questionBtn = item.querySelector('.faq-question');
+        if (!questionBtn) return;
+
+        questionBtn.addEventListener('click', () => {
+            const isActive = item.classList.contains('active');
+            
+            // Close other open FAQ items for a clean accordion experience
+            faqItems.forEach(otherItem => {
+                otherItem.classList.remove('active');
+                const otherBtn = otherItem.querySelector('.faq-question');
+                if (otherBtn) otherBtn.setAttribute('aria-expanded', 'false');
+            });
+
+            // Toggle current item
+            if (!isActive) {
+                item.classList.add('active');
+                questionBtn.setAttribute('aria-expanded', 'true');
+            } else {
+                item.classList.remove('active');
+                questionBtn.setAttribute('aria-expanded', 'false');
+            }
+        });
+    });
 }

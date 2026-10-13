@@ -1144,3 +1144,170 @@ footer {
         height: 240px;
     }
 }
+
+/* ==========================================================================
+   Appliance Specific Specification Cards
+   ========================================================================== */
+.appliance-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+    gap: 1.5rem;
+    margin-top: 2rem;
+}
+
+.appliance-card {
+    background: #ffffff;
+    border: 1px solid var(--border-color);
+    border-radius: var(--radius-md);
+    padding: 1.8rem;
+    box-shadow: var(--shadow-sm);
+    transition: transform 0.25s ease, box-shadow 0.25s ease;
+}
+
+.appliance-card:hover {
+    transform: translateY(-4px);
+    box-shadow: var(--shadow-md);
+    border-color: var(--wood-accent);
+}
+
+.appliance-icon {
+    font-size: 2.2rem;
+    color: var(--wood-accent);
+    margin-bottom: 1rem;
+}
+
+.appliance-card h3 {
+    font-size: 1.25rem;
+    margin-bottom: 0.6rem;
+    color: var(--primary-green);
+}
+
+.appliance-card p {
+    font-size: 0.95rem;
+    color: var(--text-dark);
+    line-height: 1.6;
+}
+
+.appliance-tag {
+    display: inline-block;
+    background: #f3f4f6;
+    color: #4b5563;
+    font-size: 0.8rem;
+    font-weight: 600;
+    padding: 0.25rem 0.6rem;
+    border-radius: 4px;
+    margin-top: 1rem;
+}
+
+/* ==========================================================================
+   Volume & Tipper Explainer Callout
+   ========================================================================== */
+.volume-explainer {
+    background: #f8fafc;
+    border: 1px solid #e2e8f0;
+    border-left: 5px solid var(--wood-accent);
+    border-radius: var(--radius-sm);
+    padding: 1.5rem;
+    margin-top: 2rem;
+    font-size: 0.95rem;
+    line-height: 1.6;
+}
+
+.volume-explainer strong {
+    color: var(--primary-green);
+}
+
+.transit-advantage {
+    background: linear-gradient(135deg, #f0fdf4 0%, #e6f4ea 100%);
+    border: 1px solid #bbf7d0;
+    border-radius: var(--radius-md);
+    padding: 2rem;
+    margin-top: 2rem;
+}
+
+.transit-advantage h3 {
+    color: var(--primary-green);
+    margin-bottom: 0.8rem;
+}
+
+/* ==========================================================================
+   Interactive PAA FAQ Accordion
+   ========================================================================== */
+.faq-section {
+    margin-top: 3.5rem;
+}
+
+.faq-accordion {
+    display: flex;
+    flex-direction: column;
+    gap: 1rem;
+    margin-top: 2rem;
+}
+
+.faq-item {
+    background: #ffffff;
+    border: 1px solid var(--border-color);
+    border-radius: var(--radius-md);
+    overflow: hidden;
+    box-shadow: var(--shadow-sm);
+    transition: border-color 0.2s ease;
+}
+
+.faq-item.active {
+    border-color: var(--wood-accent);
+}
+
+.faq-question {
+    width: 100%;
+    text-align: left;
+    background: none;
+    border: none;
+    padding: 1.25rem 1.5rem;
+    font-size: 1.1rem;
+    font-weight: 700;
+    color: var(--primary-green);
+    cursor: pointer;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    gap: 1rem;
+    font-family: inherit;
+    transition: background-color 0.2s ease, color 0.2s ease;
+}
+
+.faq-question:hover {
+    background-color: #faf5ee;
+    color: var(--wood-accent);
+}
+
+.faq-icon {
+    font-size: 1rem;
+    color: var(--wood-accent);
+    transition: transform 0.3s ease;
+    flex-shrink: 0;
+}
+
+.faq-item.active .faq-icon {
+    transform: rotate(180deg);
+}
+
+.faq-answer {
+    max-height: 0;
+    overflow: hidden;
+    transition: max-height 0.35s ease, padding 0.35s ease;
+    padding: 0 1.5rem;
+    color: var(--text-dark);
+    font-size: 0.98rem;
+    line-height: 1.7;
+    background: #ffffff;
+}
+
+.faq-item.active .faq-answer {
+    max-height: 500px;
+    padding: 0 1.5rem 1.5rem 1.5rem;
+}
+
+.faq-answer p {
+    margin: 0;
+}
+
