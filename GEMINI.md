@@ -37,9 +37,10 @@
 - **SEO & Structured Data:**
   - Semantic Local Business Schema (`LocalBusiness` JSON-LD) with geo-coordinates (`50.9686, 0.2524`), opening hours, and direct tel links.
   - Complete `sitemap.xml` and `robots.txt`.
-- **Version Control & GitHub Remote:**
+- **Version Control & GitHub Pages Deployment:**
   - Repository: `https://github.com/lovefilm2018/hslogs.git`
-  - Default Branch: `main`
+  - Default Branch: `main` (serves GitHub Pages live via `https://hslogs.co.uk`)
+  - **Mandatory Deployment Rule:** Always stage, commit, and push changes directly to `origin main` so GitHub Pages updates automatically.
 
 ---
 
