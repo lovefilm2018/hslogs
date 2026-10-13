@@ -43,6 +43,7 @@
   - Repository: `https://github.com/lovefilm2018/hslogs.git`
   - Default Branch: `main` (serves GitHub Pages live via `https://hslogs.co.uk`)
   - **Custom Domain & DNS:** Apex domain `hslogs.co.uk` routed to GitHub Pages 4 Anycast IPs (`185.199.108.153` ... `111.153`) and `www` CNAME to `lovefilm2018.github.io` via IONOS DNS. Enforced HTTPS with Let's Encrypt certificate.
+  - **Google Analytics 4:** Property `H S Logs` active via Measurement ID `G-670565ZKYT` on all 4 endpoints (`index.html`, `gallery.html`, `order.html`, `contact.html`).
   - **Google Search Console & Business Profile:** Property verified, sitemap submitted, and full Google Business Profile product catalog documented in `GBP_OPTIMIZATION_GUIDE.md`.
 
 ---
