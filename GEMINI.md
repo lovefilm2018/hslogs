@@ -32,7 +32,7 @@
 ## 3. Tech Stack & Architecture
 - **Frontend Core:** Pure Semantic HTML5, Modular CSS3 (`style.css`), Vanilla JavaScript (`script.js`). Zero heavy framework overhead, 100/100 Core Web Vitals speed.
 - **Image Optimization:** High-fidelity, WebP compressed imagery (46+ timber & delivery photos in `images/`).
-- **Hero Video & Poster:** 100% authentic 18.0s rock-stable seamless looping 720p HD MP4 (`images/logs_hero.mp4`, 3.6MB) and matching poster (`images/logs_hero_poster.webp`) generated from genuine operational photography (raw forestry lorry delivery, hydraulic splitter machine, loaded Transit tipper, Rose & Crown pub drop, and customer driveway deliveries). Rock-solid framing with smooth S-curve cross-dissolves, eliminating camera shake. Zero AI hallucinations.
+- **Hero Video & Poster:** 100% authentic 21.0s buttery-smooth seamless looping 720p HD MP4 (`images/logs_hero.mp4`, 4.8MB) and matching poster (`images/logs_hero_poster.webp`) generated from genuine operational photography (raw forestry lorry delivery, hydraulic splitter machine, loaded Transit tipper, Rose & Crown pub drop, and customer driveway deliveries). Subpixel floating-point Bicubic interpolation eliminates all stepped camera shake while preserving cinematic pans and push-ins. Zero AI hallucinations.
 - **Interactive Lightbox:** Pure vanilla modal for full-size viewing of timber gallery & price flyer.
 - **SEO & Structured Data:**
   - Semantic Local Business Schema (`LocalBusiness` JSON-LD) with geo-coordinates (`50.9686, 0.2524`), opening hours, and direct tel links.
