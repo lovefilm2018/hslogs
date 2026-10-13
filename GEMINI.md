@@ -12,7 +12,7 @@
 - **Location & Base:** Heathfield, East Sussex (TN21) — serving Heathfield, Cross in Hand, Horam, Hailsham, Uckfield, Mayfield, Burwash, Robertsbridge, and surrounding High Weald / East Sussex communities.
 - **Official Domain:** `https://hslogs.co.uk`
 - **Official Socials:** [Facebook Page](https://www.facebook.com/H-S-Gardening-maintenance-315414229382232)
-- **Core Value Proposition:** Sourced locally from Forestry Commissions, seasoned in cord lengths, barn air-dried, and hand-processed directly by Hayden. Premium Prime, Beech & Ash firewood delivered prompt (4–5 working days) for wood burners, open fires, and commercial pizza vans.
+- **Core Value Proposition:** Sourced locally from Forestry Commissions, seasoned in cord lengths, barn air-dried, and hand-processed directly by Hayden. Premium Prime, Beech & Ash firewood tested under 20% moisture content to give customers maximum burning heat, clean combustion, and peak efficiency every single fire. Delivered prompt (4–5 working days) for wood burners, open fires, and commercial pizza vans.
 
 ---
 
@@ -31,7 +31,8 @@
 
 ## 3. Tech Stack & Architecture
 - **Frontend Core:** Pure Semantic HTML5, Modular CSS3 (`style.css`), Vanilla JavaScript (`script.js`). Zero heavy framework overhead, 100/100 Core Web Vitals speed.
-- **Image Optimization:** High-fidelity, WebP compressed imagery (43+ timber & delivery photos in `images/`).
+- **Image Optimization:** High-fidelity, WebP compressed imagery (46+ timber & delivery photos in `images/`).
+- **Hero Video & Poster:** 100% authentic 16.0s seamless looping 720p HD MP4 (`images/logs_hero.mp4`, 3.9MB) and matching poster (`images/logs_hero_poster.webp`) generated from genuine operational photography (raw forestry lorry delivery, hydraulic splitter machine, loaded Transit tipper, Rose & Crown pub drop, and customer driveway deliveries). Zero AI hallucinations.
 - **Interactive Lightbox:** Pure vanilla modal for full-size viewing of timber gallery & price flyer.
 - **SEO & Structured Data:**
   - Semantic Local Business Schema (`LocalBusiness` JSON-LD) with geo-coordinates (`50.9686, 0.2524`), opening hours, and direct tel links.
@@ -48,7 +49,7 @@ HSLogs/
 ├── GEMINI.md                           # Technical specification & project truth
 ├── AGENTS.md                           # Operational rules & partnership protocol
 ├── index.html                          # Homepage & pricing packages
-├── gallery.html                        # 43-photo firewood & delivery gallery with lightbox
+├── gallery.html                        # 46-photo firewood & delivery gallery with lightbox
 ├── order.html                          # Interactive order form (WhatsApp & email)
 ├── contact.html                        # Contact details & direct lines
 ├── style.css                           # Master responsive stylesheet
