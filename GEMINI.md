@@ -35,12 +35,15 @@
 - **Hero Video & Poster:** 100% authentic 18.0s buttery-smooth seamless continuous looping 720p HD MP4 (`images/logs_hero.mp4`, 3.6MB) and matching poster (`images/logs_hero_poster.webp`) generated from genuine operational photography (raw forestry lorry delivery, hydraulic splitter machine, loaded Transit tipper, Rose & Crown pub drop, customer driveway tip, and ready seasoned firewood). Subpixel floating-point Bicubic interpolation eliminates all stepped camera shake while preserving continuous cinematic pans and push-ins with seamless crossfade continuity. Zero AI hallucinations.
 - **Interactive Lightbox:** Pure vanilla modal for full-size viewing of timber gallery & price flyer.
 - **SEO & Structured Data:**
-  - Semantic Local Business Schema (`LocalBusiness` JSON-LD) with geo-coordinates (`50.9686, 0.2524`), opening hours, and direct tel links.
-  - Complete `sitemap.xml` and `robots.txt`.
+  - Semantic Multi-Entity Schema (`@graph` containing `LocalBusiness` and `FAQPage` JSON-LD) with geo-coordinates (`50.9686, 0.2524`), opening hours, price range, 18-town service coverage, product offer catalog, and 5 interactive Q&As for Google PAA snippets.
+  - Complete, unified `sitemap.xml` (all canonical endpoints) and `robots.txt`.
+  - Brand entity disambiguation targeting High Weald postcodes (`TN21`, `TN22`, `BN27`, `TN20`, `TN6`, `TN19`, `TN32`, `TN33`) to prevent collision with HubSpot CLI.
+  - Full Open Graph social tags across all pages (`index.html`, `gallery.html`, `order.html`, `contact.html`).
 - **Version Control & GitHub Pages Deployment:**
   - Repository: `https://github.com/lovefilm2018/hslogs.git`
   - Default Branch: `main` (serves GitHub Pages live via `https://hslogs.co.uk`)
-  - **Mandatory Deployment Rule:** Always stage, commit, and push changes directly to `origin main` so GitHub Pages updates automatically.
+  - **Custom Domain & DNS:** Apex domain `hslogs.co.uk` routed to GitHub Pages 4 Anycast IPs (`185.199.108.153` ... `111.153`) and `www` CNAME to `lovefilm2018.github.io` via IONOS DNS. Enforced HTTPS with Let's Encrypt certificate.
+  - **Google Search Console & Business Profile:** Property verified, sitemap submitted, and full Google Business Profile product catalog documented in `GBP_OPTIMIZATION_GUIDE.md`.
 
 ---
 
@@ -49,12 +52,15 @@
 HSLogs/
 ├── GEMINI.md                           # Technical specification & project truth
 ├── AGENTS.md                           # Operational rules & partnership protocol
-├── index.html                          # Homepage & pricing packages
+├── CNAME                               # GitHub Pages custom domain binding (hslogs.co.uk)
+├── GBP_OPTIMIZATION_GUIDE.md           # Field-by-field Google Business Profile optimization guide
+├── .gitignore                          # Git tracking exclusions
+├── index.html                          # Homepage, appliance specs, pricing packages & PAA FAQs
 ├── gallery.html                        # 46-photo firewood & delivery gallery with lightbox
 ├── order.html                          # Interactive order form (WhatsApp & email)
 ├── contact.html                        # Contact details & direct lines
-├── style.css                           # Master responsive stylesheet
-├── script.js                           # Navigation, lightbox, & WhatsApp order builder
+├── style.css                           # Master responsive stylesheet with FAQ & appliance styles
+├── script.js                           # Navigation, lightbox, FAQ accordion & order builder
 ├── sitemap.xml                         # Search engine sitemap
 ├── robots.txt                          # Crawler indexing instructions
 ├── favicon.ico                         # Favicon
