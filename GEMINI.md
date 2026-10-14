@@ -35,7 +35,7 @@
 - **Hero Video & Poster:** 100% authentic 18.0s buttery-smooth seamless continuous looping 720p HD MP4 (`images/logs_hero.mp4`, 3.6MB) and matching poster (`images/logs_hero_poster.webp`) generated from genuine operational photography (raw forestry lorry delivery, hydraulic splitter machine, loaded Transit tipper, Rose & Crown pub drop, customer driveway tip, and ready seasoned firewood). Subpixel floating-point Bicubic interpolation eliminates all stepped camera shake while preserving continuous cinematic pans and push-ins with seamless crossfade continuity. Zero AI hallucinations.
 - **Interactive Lightbox:** Pure vanilla modal for full-size viewing of timber gallery & price flyer.
 - **SEO & Structured Data:**
-  - Semantic Multi-Entity Schema (`@graph` containing `LocalBusiness` and `FAQPage` JSON-LD) with geo-coordinates (`50.9686, 0.2524`), opening hours, price range, 18-town service coverage, product offer catalog, and 5 interactive Q&As for Google PAA snippets.
+  - Semantic Multi-Entity Schema (`@graph` containing `LocalBusiness` and `FAQPage` JSON-LD) with geo-coordinates (`50.9686, 0.2524`), opening hours, explicit price range (`£75 - £330`), 15-town service coverage, and 5 interactive Q&As for Google PAA snippets. Eliminates nested catalog fragments to keep Search Console 100% clean of invalid Product snippet warnings.
   - Complete, unified `sitemap.xml` (all canonical endpoints) and `robots.txt`.
   - Brand entity disambiguation targeting High Weald postcodes (`TN21`, `TN22`, `BN27`, `TN20`, `TN6`, `TN19`, `TN32`, `TN33`) to prevent collision with HubSpot CLI.
   - Full Open Graph social tags across all pages (`index.html`, `gallery.html`, `order.html`, `contact.html`).
